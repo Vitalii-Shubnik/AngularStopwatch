@@ -13,7 +13,6 @@ export class AppComponent {
   working: boolean = false;
   sorce: Observable<number> = interval(1000)
   subscription: Subscription | null = null;
-  clickSubscription: Subscription | null = null;
 
   @ViewChild('wait') waitBtn: ElementRef;
   ngAfterViewInit() {
